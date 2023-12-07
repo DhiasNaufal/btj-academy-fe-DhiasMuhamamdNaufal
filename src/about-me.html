@@ -4,44 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me!</title>
+    <link rel="stylesheet" href="style/about-style.css" />
   </head>
   <body>
     <header>
-      <h1>About Me Page</h1>
+      <h1 id="Welcome-Header">About Me Page</h1>
       <nav>
         <a href="./index.html">Home</a>
         <a href="./about-me.html">About</a>
       </nav>
     </header>
+
     <main>
-      <p>This is Everything About me!</p>
-      <section id="general-information">
-        <figure>
-          <img src="assets/prof-img.png" alt="Yaz-profile pic" height="250px" />
-          <!-- <figcaption>Latest Photo of me</figcaption> -->
-        </figure>
-        <p>Hello There! my name is <span>Dhias Muhammad Naufal</span></p>
-        <p id="summary">
-          A <mark>passionate</mark> and <mark>determined </mark>determined
-          recent graduate in Information Engineering, committed to continuous
-          learning and eager to apply my knowledge to real-world challenges. I
-          am highly interested in the field of Software Engineering, such as
-          designing applications and solving problems that arise within software
-          systems. A curious thinker who's ambitious, loves learning, doesn't
-          give up easily, and enjoys solving problems. I thrive in both
-          team-oriented environments, where collaboration fosters innovation,
-          and when working independently to tackle complex problems.
-        </p>
+      <section>
+        <p id="hi">This is Everything <span>About me!</span></p>
       </section>
-      <section id="education">
-        <h2>Education</h2>
+
+      <section id="opening">
+        <figure>
+          <img src="assets/prof-img.png" alt="Yaz-profile-pic" height="350px" />
+        </figure>
+
         <article>
-          <h4>Gadjah Mada University</h4>
-          Teknologi Informasi / Information Engineering
+          Hello There! i'am <br />
+          <span id="nama-dhias">Dhias M Naufal</span> <br />
+          Front-end Engineer
+          <p id="quote">
+            "Successful is created by the best combination between Commitment,
+            Discipline and Consistency"
+          </p>
+          <a href="#project">
+            <button>See my work</button>
+          </a>
         </article>
       </section>
+
+      <section id="about-me-section">
+        <h2 class="judul-section">Summary</h2>
+        <article id="about-me-article">
+          <p id="summary">
+            A <mark>passionate</mark> and <mark>determined </mark>determined
+            recent graduate in Information Engineering, committed to continuous
+            learning and eager to apply my knowledge to real-world challenges. I
+            am highly interested in the field of Software Engineering, such as
+            designing applications and solving problems that arise within
+            software systems. A curious thinker who's ambitious, loves learning,
+            doesn't give up easily, and enjoys solving problems. I thrive in
+            both team-oriented environments, where collaboration fosters
+            innovation, and when working independently to tackle complex
+            problems.
+          </p>
+          <section id="education">
+            <img
+              src="assets/Lambang-UGM.png"
+              alt=""
+              height="90px"
+              width="90px"
+            />
+            <article>
+              <h4>Gadjah Mada University</h4>
+              Teknologi Informasi / Information Engineering
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <h2 class="judul-section">Working Experience</h2>
       <section id="working-experience">
-        <h2>Working Experience</h2>
         <article>
           <h4>Flutter Developer at KHDTK Wanagama</h4>
           <ul>
@@ -91,8 +120,8 @@
           </ul>
         </article>
       </section>
-      <section id="Project">
-        <h2>My Projects</h2>
+      <h2 class="judul-section">My Projects</h2>
+      <section id="project">
         <table>
           <caption>
             My Projects
@@ -106,27 +135,45 @@
           <tbody>
             <tr>
               <td>
-                <img
-                  src="assets/Wanagama.png"
-                  alt="wanagama-project"
-                  height="200px"
-                />
+                <div class="project-img">
+                  <img
+                    src="assets/Wanagama.png"
+                    alt="wanagama-project"
+                    height="200px"
+                  />
+                  <div class="btn-container">
+                    <button
+                      class="button"
+                      onclick="location.href='https://github.com/DhiasNaufal/wanagama-mobile-app'"
+                    >
+                      github repo
+                    </button>
+                  </div>
+                </div>
               </td>
               <td>
-                <img src="assets/Medq.png" alt="MEDQ-project" height="200px" />
+                <div class="project-img">
+                  <img
+                    src="assets/Medq.png"
+                    alt="MEDQ-project"
+                    height="200px"
+                  />
+                  <div class="btn-container">
+                    <button
+                      class="button"
+                      onclick="location.href='https://github.com/DhiasNaufal/MedQ_App'"
+                    >
+                      github repo
+                    </button>
+                  </div>
+                </div>
               </td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section id="moto-hidup">
-        <h2>Motto in Life</h2>
-        <article>
-          "Successful is created by the best combination between Commitment,
-          Discipline and Consistency"
-        </article>
-      </section>
     </main>
+
     <footer>
       <p>&copy; 2023 BTJ Academy</p>
     </footer>

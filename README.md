@@ -10,19 +10,30 @@ btj-academy-fe-DhiasMuhammadNaufal
 |  |-- about-me.html
 |  |-- assets/
 |  |  |-- image.png
+|  |-- style/
+|  |  |-- about-style.css
+|  |  |-- index-style.css
 |-- README.md
 ```
 
-## Practical Exercise #1 : Login Landing Page & about me page
+## Practical Exercise #2 : Styling Login Landing Page & about me page
 
-Practical Excercise yang pertama ialah membuat dokumen HTML untuk sebuah Landing Page Login sepeerti contoh MockUp yang ditentukan. Hasil untuk Practical Exercise pertama ini ada dalam file `index.html` pada folder `src`
+Practical Excercise kali ini akan melakukan styling pada halaman landing page login dan about me page pada exercise pertama. Hasil untuk Practical Exercise kedua ini ada pada folder `style` yang terdiri dari `index-style.css` untuk styling halaman login `index.html` dan `about-style.css` untuk stling halaman about me `about-me.html` <br>
 
-Selanjutnya membuat about me page dengan ketentuan konten: <br>
+### Apa yang berubah
 
-1. Image Profile
-2. Name
-3. One Paragraph About Yourself
-4. Education and Work Experience
-5. Your Motto in Life
+1. Mengubah beberapa urutan tag pada file HTML
+2. Styling menggunakan External CSS
 
-Page about me ini ada dalam dokumen html dengan nama `about-me.html` pada folder `src` <br>
+```
+<link rel="stylesheet" href="style/about-style.css" />
+<link rel="stylesheet" href="style/index-style.css" />
+```
+
+### Hasil Landing Page
+
+![Hasil landing page](/src/assets/landing-page.png)
+
+### Hasil about
+
+![Hasil landing page](/src/assets/about-page.png)
