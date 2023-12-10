@@ -1,0 +1,127 @@
+:root {
+  --main-c: #352f64;
+  --second-c: #cfddf9;
+  --neutral-c: #ffff;
+}
+* {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  margin-top: 20px;
+}
+p {
+  margin: 0;
+}
+body {
+  background-color: var(--main-c);
+  margin: 0;
+  padding: 5% 5%;
+  display: flex;
+}
+
+#main-container {
+  background-color: var(--neutral-c);
+  padding: 30px 50px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#left-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav {
+  display: flex;
+  gap: 10px;
+}
+nav a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+#main-left {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 50px;
+  border-radius: 24px;
+  background-color: var(--second-c);
+}
+
+/* #main-right {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  width: 100%;
+  /* justify-content: baseline; */
+  gap: 4px;
+  /* padding: 20px 25px; */
+}
+#form-article {
+  width: 100%;
+}
+form input {
+  height: 50px;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
+form > input[type="text"],
+form > input[type="password"]:focus {
+  outline-color: var(--main-c);
+}
+
+form > input[type="submit"] {
+  background-color: var(--main-c);
+  color: #f5f4f5;
+  border: none;
+}
+form > input[type="submit"]:hover {
+  background-color: var(--main-c);
+  cursor: pointer;
+}
+#main-right {
+  /* flex: 1; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+#main-right > article {
+  font-style: italic;
+  color: var(--main-c);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
