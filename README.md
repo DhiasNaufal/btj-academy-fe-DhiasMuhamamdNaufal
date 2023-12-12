@@ -18,24 +18,27 @@ btj-academy-fe-DhiasMuhammadNaufal
 |-- README.md
 ```
 
-## Practical Exercise #3 : Styling Login Landing Page & about me page
+## Practical Exercise #4 : Javascript
 
-Practical Excercise kali ini akan melakukan styling pada halaman landing page login dan about me page pada exercise pertama. Hasil untuk Practical Exercise kedua ini ada pada folder `style` yang terdiri dari `index-style2.css` untuk styling halaman login `index.html` dan `about-style2.css` untuk stling halaman about me `about-me.html` <br>
+Practical Excercise kali ini akan Menambahkan Javascript ke dalam halam landing page. Fitur yang ditambahkan ialah : <br>
+
+1. Logo di Sebelah Welcome berputar 360 derajat ketika di-`click`
+2. Fitur Show Password
+3. Fitur Form Valildation dan teks error ketika submit form dilakukan dan username kosong atau ketentuan password salah. Dengan
+   Ketentuan password : minimal 1 huruf besar, 1 huruf kecil, 1 number, 1 symbol)
+4. Fitur Form validation untuk ketentuan password dilakukan juga saat mengetik/menginput password.
+5. Jika username dan password terisi, saat submit, page akan dialihkan menuju about page
+6. Tambahkan warning jika caps lock pada keyboard ON, warning hilang jika caps lock Off
 
 ### Apa yang berubah
 
-1. Mengubah beberapa urutan tag pada file HTML
-2. Styling menggunakan External CSS
+1. Memperbaiki kesalahan responsif pada pertemuan seblumnya
+2. Menambahkan File Script yang berisi fitur fitur pada landing page
 
-```
-<link rel="stylesheet" href="style/about-style2.css" />
-<link rel="stylesheet" href="style/index-style2.css" />
-```
+### Hasil Landing Page versi responsif
 
-### Hasil Landing Page
+![Hasil landing page](/src/assets/respon-index.png)
 
-![Hasil landing page](/src/assets/landing-page2.png)
+### Hasil about versi responsif
 
-### Hasil about
-
-![Hasil landing page](/src/assets/about-page2.png)
+![Hasil landing page](/src/assets/respon-about.png)

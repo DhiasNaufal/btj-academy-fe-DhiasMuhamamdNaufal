@@ -16,7 +16,7 @@ html {
 body {
   background-color: var(--main-c);
   margin: 0;
-  padding: 5% 5%;
+  padding: 2% 2%;
   display: flex;
 }
 
@@ -72,6 +72,7 @@ nav a:hover {
 }
 #opening {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 30px 50px;
   transition-property: opacity;
@@ -99,8 +100,8 @@ nav a:hover {
   }
 }
 #opening-left {
-  /* flex: 1; */
-  width: 50%;
+  flex: 1;
+  /* width: 50%; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -108,7 +109,7 @@ nav a:hover {
   text-align: center;
   justify-content: space-around;
   animation: 1s ease-out 0s 1 slideInLeft;
-  /* padding: 50px; */
+  padding: 10px;
 }
 #opening-left img {
   border-radius: 16px;
@@ -125,13 +126,14 @@ nav a:hover {
 
 #opening-right {
   display: flex;
-  width: 50%;
+  flex: 1;
+  /* width: 50%; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   animation: 1s ease-out 0s 1 slideInRight;
   /* gap: 10px; */
-  /* padding: 50px; */
+  padding: 10px;
   border-radius: 24px;
   /* background-color: var(--second-c); */
 }
@@ -184,14 +186,16 @@ nav a:hover {
 
 #about-me-article {
   display: flex;
+  flex-wrap: wrap;
   padding: 0px 7%;
   padding-bottom: 30px;
   gap: 30px;
 }
-#about-me-article > p {
+#about-me-article > #summary {
   flex: 1;
   text-align: justify;
   line-height: 1.5;
+  padding: 10px;
 }
 
 #education {
@@ -206,6 +210,7 @@ nav a:hover {
   border-radius: 16px;
   box-shadow: 0px 0px 10px rgba(44, 42, 42, 0.3);
   transition: all 300ms ease;
+  padding: 10px;
 }
 #education:hover {
   /* cursor: pointer; */
@@ -248,7 +253,7 @@ nav a:hover {
   align-items: center;
 }
 #project img {
-  height: 300px;
+  height: 270px;
   margin-bottom: 10px;
   transition: all 300ms ease;
 }
@@ -282,4 +287,31 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  #left-header h1 {
+    font-size: 18px;
+  }
+  #opening {
+    flex-direction: column;
+  }
+  #opening h1 {
+    font-size: 30px;
+  }
+  #opening img {
+    height: 180px;
+  }
+  #about-me-article {
+    flex-direction: column;
+  }
+  #working-experience {
+    flex-direction: column;
+  }
+  #project {
+    display: flex;
+    flex-direction: column;
+  }
+  #project img {
+    height: 180px;
+  }
 }

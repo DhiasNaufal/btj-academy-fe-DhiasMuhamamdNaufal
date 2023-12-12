@@ -6,6 +6,9 @@
 * {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 2rem;
@@ -20,15 +23,21 @@ p {
 }
 body {
   background-color: var(--main-c);
-  margin: 0;
-  padding: 5% 5%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  min-height: 100vh;
 }
 
 #main-container {
-  background-color: var(--neutral-c);
-  padding: 30px 50px;
-  width: 100%;
+  width: 90%;
+  height: 100%;
+  border-radius: var(--main-radius);
+  background: #fff;
+  color: #494f75;
+  padding: 20px 40px;
   border-radius: 24px;
 }
 
@@ -36,7 +45,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 20px;
+  height: 100%;
 }
 
 #left-header {
@@ -44,9 +54,18 @@ header {
   align-items: center;
   gap: 10px;
 }
+#left-header img {
+  height: 70px;
+}
+#logo-kiri {
+  transition: 1s;
+}
 nav {
   display: flex;
   gap: 10px;
+}
+nav a:hover {
+  color: #494f75;
 }
 nav a {
   text-decoration: none;
@@ -55,10 +74,11 @@ nav a {
 main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #main-left {
   display: flex;
-  width: 50%;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
@@ -67,20 +87,11 @@ main {
   background-color: var(--second-c);
 }
 
-/* #main-right {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-} */
-
 form {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
   width: 100%;
-  /* justify-content: baseline; */
   gap: 4px;
-  /* padding: 20px 25px; */
 }
 #form-article {
   width: 100%;
@@ -89,6 +100,11 @@ form input {
   height: 50px;
   padding: 0px 10px;
   border-radius: 3px;
+}
+form > input[type="text"],
+form > input[type="password"] {
+  outline-color: none;
+  border: none;
 }
 form > input[type="text"],
 form > input[type="password"]:focus {
@@ -101,12 +117,31 @@ form > input[type="submit"] {
   border: none;
 }
 form > input[type="submit"]:hover {
-  background-color: var(--main-c);
+  background-color: #494f75;
   cursor: pointer;
 }
+form div {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+#showPassword {
+  width: 15px;
+  height: 15px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.warning {
+  color: rgb(255, 145, 0);
+  font-size: 12px;
+  margin-top: 2px;
+}
 #main-right {
-  /* flex: 1; */
-  width: 50%;
+  flex: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -119,9 +154,22 @@ form > input[type="submit"]:hover {
   font-style: italic;
   color: var(--main-c);
 }
+#main-right img {
+  display: flex;
+  height: 200px;
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  #left-header img {
+    height: 50px;
+  }
+  #left-header h1 {
+    font-size: 18px;
+  }
 }
