@@ -6,6 +6,7 @@
     <title>BTJ Academy - FE Day 1</title>
     <!-- <link rel="stylesheet" href="style/index-style.css" /> -->
     <link rel="stylesheet" href="style/index-style2.css" />
+    <script src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <div id="main-container">
@@ -29,6 +30,7 @@
           <p>Please login to access other features</p>
           <article id="form-article">
             <form onsubmit="return validateForm(event)">
+              <span id="errorForm" class="error"></span>
               <label for="Uname">Username:</label>
               <input
                 type="text"
@@ -46,7 +48,7 @@
               />
               <span id="errorPassword" class="error"></span>
               <span id="capsLockWarning" class="warning"
-                >warning! Caps lock is ON.</span
+                >Warning! Caps lock is ON.</span
               >
               <div>
                 <input

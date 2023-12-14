@@ -6,20 +6,44 @@
     <title>About me!</title>
     <!-- <link rel="stylesheet" href="style/about-style.css" /> -->
     <link rel="stylesheet" href="style/about-style2.css" />
+    <script src="jquery-3.7.1.min.js"></script>
   </head>
   <body>
+    <div id="popupContainer" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <div>
+          <h1>
+            ❗❗❗WARNING❗❗❗ <br />
+            TERIMAKASIH BANYAK BUAT KAKA JEN, TETEH JEN, ATAU MBAK JEN HEHE<br />
+          </h1>
+          <p>
+            Terima kasih banyak sudah meluangkan waktunya untuk menjadi tutor.
+            Sampai jumpa di lain "project"🤞... Semoga bisa cepat berkolaborasi.
+            Saya pribadi berterima kasih karena ilmu "basic" ini manfaatnya
+            besar banget buat diri saya untuk menjadi bekal utama nantinya. Saya
+            pribadi suka cara belajarnya, sat set langsung pada intinya dan
+            postestnya buat explore sendiri dari apa yang sudah dipelajari .
+            Sekali lagi terimakasihhh!! *this is secret feature :)
+          </p>
+        </div>
+      </div>
+    </div>
     <div id="main-container">
       <header>
         <div id="left-header">
-          <a href="#">
-            <img
-              src="assets/yas-emoji.jpeg"
-              alt="logo-computer-ungu"
-              height="70px"
-            />
-          </a>
-
+          <img
+            src="assets/yas-emoji.jpeg"
+            alt="Logo-Emoji-Dhias"
+            height="70px"
+            id="logo-dhias"
+          />
           <h1 id="Welcome-Header">About Me Page</h1>
+          <label class="switch">
+            <input type="checkbox" id="darkModeCheckbox" />
+            <span class="slider round"></span>
+          </label>
+          <button id="clickme">&larr; Try this</button>
         </div>
         <nav>
           <a href="./index.html">Home</a>
@@ -34,9 +58,16 @@
           <div id="opening-left">
             <figure>
               <img
+                src="assets/portrait.jpg"
+                alt="Yaz-profile-pic"
+                height="350px"
+                id="portrait"
+              />
+              <img
                 src="assets/prof-img.png"
                 alt="Yaz-profile-pic"
                 height="350px"
+                id="wisuda"
               />
             </figure>
             <p id="quote">
@@ -82,6 +113,14 @@
                 alt=""
                 height="90px"
                 width="90px"
+                id="ugm"
+              />
+              <img
+                src="assets/kmteti.png"
+                alt=""
+                height="90px"
+                width="90px"
+                id="kmteti"
               />
               <article>
                 <h4>Gadjah Mada University</h4>
@@ -226,5 +265,6 @@
         <p>&copy; 2023 BTJ Academy</p>
       </footer>
     </div>
+    <script src="about-script.js"></script>
   </body>
 </html>
